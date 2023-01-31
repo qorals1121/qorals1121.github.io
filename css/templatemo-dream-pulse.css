@@ -243,6 +243,11 @@ a {
   color: rgb(197, 197, 197);
 }
 
+.fa-lightbulb {
+  width: 120px;
+  height: 120px;
+}
+
 .tm-section-icon {
   color: #369;
   width: 120px;
@@ -677,6 +682,11 @@ figure.effect-bubba:hover p {
   .tm-box-pad {
     padding: 50px 30px;
   }
+}
+.tm-double-border-2 p i {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
 }
 
 .git-link {
