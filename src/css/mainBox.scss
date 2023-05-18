@@ -1,0 +1,78 @@
+.main-box {
+    display: flex;
+    position: relative;
+    background: white;
+    width: 80%;
+    height: 800px;
+    margin: 0px auto;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    padding: 3%;
+    border-radius: 10px 0px 10px 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    p { display: inline; }
+    span { line-height: 1.7; }
+     a {color: #999; text-decoration: none; outline: none}
+     a:hover, a:active {text-decoration: none; color:blue;}
+}
+
+.navi {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    margin-right: 10%;
+}
+
+.btn {
+    width: 120px;
+    height: 60px;
+    margin: 30px 0px 0px 10px;
+    border-radius: 10px 10px 0px 0px;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+    font-family: 'KCCChassam', sans-serif;
+    cursor: pointer;
+    background: yellow;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background: blue;
+    color: white;
+}
+
+.my-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.my-pic {
+    width: 200px;
+    height: 200px;
+    margin: 0px 30px 0px 0px;
+    border-radius: 50%;
+    background: violet;
+}
+
+.my-intro {
+    width: 400px;
+    height: 265px;
+    margin: 0px 30px;
+}
+
+.education-box {
+    p{
+        display: inline-block;
+        width: 165px;
+        margin:0px 20px;
+        line-height: 2;
+    }
+    span{ line-height: 2; }
+}
+
+.skill-box {
+
+}
