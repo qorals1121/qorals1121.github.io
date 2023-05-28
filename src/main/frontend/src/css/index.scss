@@ -3,6 +3,7 @@
     position: relative;
     background: white;
     width: 80%;
+    min-width: 1280px;
     height: 800px;
     margin: 0px auto;
     font-size: 1.2rem;
@@ -11,10 +12,19 @@
     border-radius: 10px 0px 10px 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     z-index: 1;
-    p { display: inline; }
     span { line-height: 1.7; }
      a {color: #999; text-decoration: none; outline: none}
-     a:hover, a:active {text-decoration: none; color:blue;}
+     a:hover { animation-duration: 3s; animation-name: rainbowLink; animation-iteration-count: infinite; } 
+    @keyframes rainbowLink {     
+    0% { color: #ff2a2a; }
+    15% { color: #ff7a2a; }
+    30% { color: #ffc52a; }
+    45% { color: #43ff2a; }
+    60% { color: #2a89ff; }
+    75% { color: #202082; }
+    90% { color: #6b2aff; } 
+    100% { color: #e82aff; }
+    }
 }
 
 .navi {
@@ -32,47 +42,23 @@
     border: none;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     font-size: 1.2rem;
-    font-family: 'KCCChassam', sans-serif;
     cursor: pointer;
-    background: yellow;
+    background: rgb(149, 190, 231);
+    color: white;
     transition: all 0.5s ease;
+    &:hover {
+        background: white;
+        color: rgb(149, 190, 231);
+    }
 }
 
-.btn:hover {
-    background: blue;
-    color: white;
+.click {
+    background: white;
+    color: rgb(149, 190, 231);
 }
 
 .my-box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.my-pic {
-    width: 200px;
-    height: 200px;
-    margin: 0px 30px 0px 0px;
-    border-radius: 50%;
-    background: violet;
-}
-
-.my-intro {
-    width: 400px;
-    height: 265px;
-    margin: 0px 30px;
-}
-
-.education-box {
-    p{
-        display: inline-block;
-        width: 165px;
-        margin:0px 20px;
-        line-height: 2;
-    }
-    span{ line-height: 2; }
-}
-
-.skill-box {
-
 }

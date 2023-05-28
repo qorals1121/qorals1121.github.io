@@ -1,0 +1,23 @@
+h2 { margin: 0px 0px 10px 0px; }
+
+.my-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-box {
+    margin: 0px;
+    width: 500px;
+    p {
+        display: inline;
+        font-weight: 700;
+        font-size: 1.3rem;
+        width: 100px;
+    }
+}
+
+.player-wrapper {
+    justify-content: flex-end;
+    margin: auto 0px auto 20px;
+}
