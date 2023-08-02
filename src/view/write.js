@@ -10,30 +10,35 @@ function Write() {
         <div className='my-box'>
             <div className='comment-line'>
                 <input className='comment-title'placeholder='제목' />
+                <input className='comment-pw' type='password' placeholder='비밀번호' />
                 <textarea className='comment-text' placeholder='내용' />
                 <button type='button' className='comment-btn'>등록</button>
             </div>
             <div className='board-box'>
                 <table>
-                    <tr>
+                    <tr className='table-title'>
                         <th>No.</th>
                         <th>제목</th>
-                        <th>수정</th>
                         <th>삭제</th>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>제목</td>
-                        <td><FontAwesomeIcon icon={faPenToSquare} /></td>
+                        <td className='board-title'>제목</td>
                         <td><FontAwesomeIcon icon={faXmark} /></td>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>제목</td>
-                        <td><FontAwesomeIcon icon={faPenToSquare} /></td>
+                        <td className='board-title'>제목</td>
                         <td><FontAwesomeIcon icon={faXmark} /></td>
                     </tr>
                 </table>
+                <div className='board-back'>
+                    <div className='board-popup'>
+                        <div className='title'>제목</div>
+                        <FontAwesomeIcon icon={faXmark} />
+                        <div className='sub'>내용</div>
+                    </div>
+                </div>
             </div>
         </div>
     );
